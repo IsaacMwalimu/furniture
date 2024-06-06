@@ -1,0 +1,450 @@
+@media  only screen and (min-width:950px) {
+    
+*{
+    overflow-x: hidden;
+    transition:0.3s ease ;
+    white-space: none;
+    padding:0;
+    margin:0;
+    ;
+}
+
+#logo{
+    width:100%;top:0;
+    height:25%; overflow: hidden;
+    position:absolute;
+    background:linear-gradient( to bottom,  #b4afaf, white) 
+} 
+#logo img{
+    position: relative;
+width:13%;
+height:100%;
+
+}
+.list{
+    display: flex;
+    gap:10px 10px ;
+    flex-wrap: wrap;
+    width:90%;
+    margin-left:7rem;
+    top:20%;
+    position: absolute;
+}
+
+.item{
+    text-align: center;
+    background-color: #b1e4be;
+    width:16%;
+    box-shadow: 0 50px 50px #757676;
+    height:40%;
+    }
+    .list .item img{
+    width:90%;
+    height:60%;
+    aspect-ratio: 3/3;
+    }
+    .list .item .title{
+    font-weight: 100;
+    }
+    .list .item .price{
+    margin: 10px;
+    }
+    .item-button{
+    background-color: #1C1F25;
+    color: #fff;border-radius: 0px;
+    width: 100%;
+    padding: 10px;
+    transition: 0.1s;outline: none;
+    border:none;
+    visibility: hidden;
+    transition: .3s smooth;
+    }
+    .item:hover .item-button{
+visibility: visible;
+    }
+    .list .item-button:hover{
+    background:orange;
+    outline: none;
+    border:none;
+    }
+    .item button:visited{background: green;};
+    .card{
+    position:absolute;
+    top:0%;
+    right:0%;
+    border:1px solid blue;
+    width:50%;z-index: 100;
+    background-color: #080303;
+    height: 100%;
+    transition: 0.5s;
+    }
+
+
+.card-e{
+    width:80%;
+    top:30%;
+    position: absolute;
+    background: rgb(174, 175, 174);
+    backdrop-filter: blur(10px);
+    left:-400%;
+}
+    .card h1{
+        color: #E8BC0E;
+        font-weight: 100;
+        margin: 0;
+        padding: 0 20px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        }
+        .card .checkOut{
+        position: relative;
+        bottom: 0;
+        width: 10%;
+        display: grid;border:1px solid yellow;
+        grid-template-columns: repeat(2, 1fr);color:#E8BC0E;
+        
+        }
+        .card .checkOut div{
+        background-color: #E8BC0E;
+        width: 10%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;left:20%;
+    padding-bottom: 10px;;
+        font-weight: bold;
+        cursor: pointer;
+        }
+        .card .checkOut div:nth-child(2){
+        background-color: #1C1F25;
+        color: green;
+        }/* crucial*/
+        .listCard li{
+        display: grid;
+        grid-template-columns: 100px repeat(3, 1fr);
+        color: #000000;position:relative ;
+        width:100%;left:0%;font-size: 10px;
+        gap:20px;top:50%;
+        margin-bottom:0.5rem;
+        }
+        #pay{
+        width:20%;
+        height: 30px;
+        background: rgb(97, 172, 95);
+        right:0%;top:40%;text-align: center;
+        position:inherit;
+        bottom:0;
+        }
+        #close{
+            width:10%;
+            text-align: center;
+            height: 30px;
+            background: red;
+            left:90%;top:40%;
+            position:relative;
+            bottom:0;
+            cursor: pointer;
+        }
+        .total{
+            width:17%;        background:orange;
+            text-align: center  ;
+            height: 30px;
+            left:40%;
+            position:relative;
+            bottom:0;
+            cursor: pointer;
+
+        }
+       .name-ou{
+        color:rgb(48, 47, 5);padding-inline:60px;font-size:30px;
+       }
+       .price-ou{
+        padding-inline:30px;
+        font-size: 30px;
+       }
+        .listCard li div{
+        display: flex;
+        justify-content: center;padding:10px 20px;
+        align-items: center;font-size: 10px;height:auto;width:auto;
+        }
+        .listCard li img{
+        width:100%;left:10%;
+        height:100%;
+        position:inherit;
+        background:scroll;
+        }
+        #shopping{
+            position: absolute;
+            text-align: right;display: flex
+            ;justify-content: center;
+            left:80%;top:6%;
+            width:8%;height:5%;
+        ;z-index: 40;transition: 0.3s;
+            }#shopping:hover{
+                width:8.6%;
+                height:5.6%;
+            }
+          
+             #shopping span{
+            background: red;color:red;
+            border-radius: 50%;
+            display: flex;z-index: 32;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            position: absolute;
+            top: -3px;
+            left: 70%;
+            padding: 2px 5px;
+            }
+
+nav{
+
+    width:1000px;
+    height:30%;
+    margin-left:14rem;
+    display:flex;z-index: 30;
+    margin-top:5.7rem;border-bottom:1px solid black;
+
+}
+ nav a{
+    padding-inline:10px;
+    font-size:large;
+    text-decoration: none;z-index: 30;
+    color:black;
+    border:0.3px solid rgba(0, 0, 0, 0.336);
+     margin-left:2rem;
+
+ }
+ nav a:hover{
+    color:#4dc715;;
+    border:0.2px solid  #4dc715;
+ }
+
+
+
+}
+@media only screen and (min-width:600px) and (max-width:800px){
+
+    *{
+        overflow-x: hidden;
+        white-space: none;
+        margin:0;
+        padding:0;
+        transition: 0.4s ease;
+    }
+    
+    #logo{
+        width:100%;top:0;
+        height:15%; 
+        position:absolute;
+        background:linear-gradient( to bottom,  #b4afaf, white) 
+    } 
+    #logo img{
+        position: relative;
+    width:22%;
+    height:100%;
+    
+    }
+    .list{
+        display: flex;
+        gap:10px 10px ;
+        flex-wrap: wrap;
+        width:100%;
+        right:0;
+        top:30%;
+        position: absolute;
+    }
+    
+    .item{
+        text-align: center;
+        background-color: #b1e4be;
+        width:30%;
+        box-shadow: 0 50px 50px #757676;
+        height:40%;
+        }
+        .list .item img{
+        width:90%;
+        height:60%;
+        aspect-ratio: 3/3;
+        }
+        .list .item .title{
+        font-weight: 100;
+        }
+        .list .item .price{
+        margin: 10px;
+        }
+        .item-button{
+        background-color: #1C1F25;
+        color: #fff;border-radius: 0px;
+        width: 100%;
+        padding: 10px;
+        transition: 0.1s;outline: none;
+        border:none;
+        transition: .3s smooth;
+        }
+   
+        .list .item-button:hover{
+        background:orange;
+        outline: none;
+        border:none;
+        }
+        .item button:visited{background: green;};
+        .card{
+        position:absolute;
+        top:0%;
+        right:0%;
+        width:50%;z-index: 100;
+        background-color: #080303;
+        height: 100%;
+        transition: 0.5s;
+        }
+    
+    
+    .card-e{
+        width:90% ;
+        top:20%;
+        position: absolute;
+        background: rgb(174, 175, 174);
+        backdrop-filter: blur(10px);
+        left:-100%;z-index:30;
+
+    }
+        .card h1{
+            color: #E8BC0E;
+            font-weight: 100;
+            margin: 0;
+            padding: 0 20px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            }
+            .card .checkOut{
+            position: relative;
+            bottom: 0;
+            width: 10%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);color:#E8BC0E;
+            
+            }
+            .card .checkOut div{
+            background-color: #E8BC0E;
+            width: 10%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;left:20%;
+        padding-bottom: 10px;;
+            font-weight: bold;
+            cursor: pointer;
+            }
+            .card .checkOut div:nth-child(2){
+            background-color: #1C1F25;
+            color: green;
+            }/* crucial*/
+            .listCard li{
+            display: grid;
+            grid-template-columns: 100px repeat(3, 1fr);
+            color: #000000;position:relative ;
+            width:100%;left:0%;font-size: 10px;
+            gap:20px;top:50%;
+            margin-bottom:0.5rem;
+            }
+            #pay{
+            width:20%;
+            height: 30px;
+            background: rgb(97, 172, 95);
+            right:0%;top:40%;
+            position:inherit;
+            bottom:0;
+            }
+            #close{
+                width:10%;
+                text-align: center;
+                height: 30px;
+                background: red;
+                left:90%;top:40%;
+                position:relative;
+                bottom:0;
+                cursor: pointer;
+            }
+            .total{
+                width:17%;        background:orange;
+                text-align: center  ;
+                height: 30px;
+                left:40%;
+                position:relative;
+                bottom:0;
+                cursor: pointer;
+    
+            }
+           .name-ou{
+            color:rgb(48, 47, 5);padding-inline:60px;font-size:30px;
+           }
+           .price-ou{
+            padding-inline:30px;
+            font-size: 30px;
+           }
+            .listCard li div{
+            display: flex;
+            justify-content: center;padding:10px 20px;
+            align-items: center;font-size: 10px;height:auto;width:auto;
+            }
+            .listCard li img{
+            width:100%;left:10%;
+            height:100%;
+            position:inherit;
+            background:scroll;
+            }
+            #shopping{
+                position: absolute;
+                text-align: right;display: flex
+                ;justify-content: center;
+                left:80%;top:6%;
+                width:8%;height:5%;
+            ;z-index: 40;transition: 0.3s;
+                }#shopping:hover{
+                    width:8.6%;
+                    height:5.6%;
+                }
+              
+                 #shopping span{
+                background: red;color:red;
+                border-radius: 50%;
+                display: flex;z-index: 32;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                position: absolute;
+                top: -3px;
+                left: 70%;
+                padding: 2px 5px;
+                }
+    
+    nav{
+    
+        width:1000px;
+        height:30%;
+        margin-left:2rem;
+        display:flex;z-index: 30;
+        margin-top:16.4rem;
+    
+    }
+     nav a{
+        padding-inline:10px;
+        font-size:large;
+        text-decoration: none;z-index: 30;
+        color:black;
+        border:0.3px solid rgba(0, 0, 0, 0.336);
+         margin-left:2rem;
+    
+     }
+     nav a:hover{
+        color:#4dc715;;
+        border:0.2px solid  #4dc715;
+     }
+    
+    
+
+}

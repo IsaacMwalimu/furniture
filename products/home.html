@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Furniture</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+    </head>
+    <body>
+    
+<nav>
+<div id="logo-main">
+<img src="images/logo.png" alt="#"></div>
+ <div id="div-1">
+      <a href="#">Home</a>
+  <a href="#">About</a>
+    <a href="#sec-c1">Products</a>
+    <a href="#">Help</a></div>
+
+
+  
+</nav>
+
+<!-- hii div iko na id=login-icon   ni hako kamtu ka login ///// img should be in its own div to done after knec exam  -->
+<div id="login-icon">
+ <div id="i"></div>
+ <div id="i-"></div>
+</div>
+
+<section id="img">
+
+<img src="images/pexels-jean-van-der-meulen-1543447.jpg" alt="#">
+
+<div id="menu-d">
+<div>
+<h4>60K+</h4>
+<span>Sales</span></div>
+
+<div>
+<h4>70k+ </h4>
+<span>Customer Reviews </span></div>
+
+<div>
+<h4>100k+</h4>
+<span>Trusted Customers</span></div>
+
+</div>
+</section>
+
+<!-- hii sec2 ni the products section-->
+<section id="sec2">
+
+<div id="sec-c1">
+<span id="span">50% off </span>
+<img src="images/pexels-element-digital-1125130.jpg" alt="#" data-aos="fade-left"></div>
+
+<div id="sec-c2" >
+<span id="span">50% off </span>
+<img src="images/pexels-element-digital-1125130.jpg" alt="#" data-aos="zoom-in"></div>
+
+<div id="sec-c3">
+<span id="span">50% off </span>
+<img src="images/pexels-element-digital-1125130.jpg" alt="#" data-aos="flip-right"></div>
+
+<a href="products/products.html" id="items">More Products</a>
+</section>
+
+
+
+<!-- hii nayo ni form ya login na images ziko named very greatly-->
+<form id="form">
+<img id="form-im" src="images/logo.png" alt="#">
+<img id="close" src="images/close.png" alt="##">
+<div><input type="Email" name="" value="" placeholder="Email"></div>
+<div><input type="`Password" name="" value="" placeholder="Password"></div>
+<div><input type="Password" name="" value="" placeholder="Confirm Password"></div>
+
+<button type="submit">Submit</button>
+</form>
+    </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Js inaanza hapa chini-->
+    <script>
+    // variables assigned 
+    let form =document.getElementById("form")
+    let login = document.getElementById("i");
+    let Close =document.getElementById("close");
+    let login1 = document.getElementById("i-");
+    let Menu =document.getElementById("menu-d");
+
+
+  AOS.init();
+
+
+//uole.log("click");kifinya hako kamtu form element inakuwa left 50%
+login.addEventListener("click", ()=>{
+    form.style.left="50%";
+    cons
+
+});
+// same
+login1.addEventListener("click", ()=>{
+    form.style.left="50%";
+    console.log("click")
+});
+
+// hii nayo ni ya kupoteza form if it makes sense
+Close.addEventListener("click",()=>{
+    form.style.left="-600px";
+});
+
+
+// do your php ...if statements za ku check valid email and password and more features
+    </script>
+</html>
